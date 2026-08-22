@@ -1,0 +1,62 @@
+{
+  "dunnhumby": {
+    "best_parameters": {
+      "recency": 40,
+      "asymmetry": 0.75,
+      "locality": 5
+    },
+    "best_score": 0.27733055243574517,
+    "metric": "nDCG@5",
+    "timestamp": "2025-12-30T13:05:45.783429"
+  },
+  "instacart": {
+    "best_parameters": {
+      "recency": 40,
+      "asymmetry": 0.75,
+      "locality": 5
+    },
+    "best_score": 0.43195872520390854,
+    "metric": "nDCG@5",
+    "timestamp": "2025-12-30T14:16:46.455902"
+  },
+  "retailrocket": {
+    "best_parameters": {
+      "recency": 30,
+      "asymmetry": 0.25,
+      "locality": 1
+    },
+    "best_score": 0.5780175450229643,
+    "metric": "nDCG@5",
+    "timestamp": "2025-12-30T19:26:43.443957"
+  },
+  "taobao": {
+    "best_parameters": {
+      "recency": 30,
+      "asymmetry": 0.25,
+      "locality": 1
+    },
+    "best_score": 0.07359104801024229,
+    "metric": "nDCG@5",
+    "timestamp": "2025-12-31T12:34:18.460584"
+  },
+  "sam": {
+    "best_parameters": {
+      "recency": 40,
+      "asymmetry": 0.75,
+      "locality": 5
+    },
+    "best_score": 0.3474520733285189,
+    "metric": "nDCG@5",
+    "timestamp": "2025-12-31T14:16:51.967020"
+  },
+  "valuedshopper": {
+    "best_parameters": {
+      "recency": 40,
+      "asymmetry": 0.1,
+      "locality": 10
+    },
+    "best_score": 0.3326943790747571,
+    "metric": "nDCG@5",
+    "timestamp": "2026-01-13T10:38:57.916590"
+  }
+}

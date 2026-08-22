@@ -1,0 +1,104 @@
+{
+  "dunnhumby": {
+    "best_parameters": {
+      "hidden_size": 64,
+      "num_layers": 2,
+      "learning_rate": 0.0001,
+      "num_iter": 3,
+      "labmda": 20,
+      "max_length": 100,
+      "dropout_p": 0.1,
+      "use_embedding": 1,
+      "use_linear_reduction": 0,
+      "actual_epochs": 1
+    },
+    "best_score": 0.2158402386583452,
+    "metric": "nDCG@5",
+    "timestamp": "2025-12-28T19:55:35.987703"
+  },
+  "instacart": {
+    "best_parameters": {
+      "hidden_size": 16,
+      "num_layers": 3,
+      "learning_rate": 0.0001,
+      "num_iter": 3,
+      "labmda": 5,
+      "max_length": 50,
+      "dropout_p": 0,
+      "use_embedding": 1,
+      "use_linear_reduction": 0,
+      "actual_epochs": 3
+    },
+    "best_score": 0.3050279936457525,
+    "metric": "nDCG@5",
+    "timestamp": "2025-12-29T19:30:02.318051"
+  },
+  "retailrocket": {
+    "best_parameters": {
+      "hidden_size": 32,
+      "num_layers": 1,
+      "learning_rate": 0.005,
+      "num_iter": 3,
+      "labmda": 5,
+      "max_length": 100,
+      "dropout_p": 0.2,
+      "use_embedding": 1,
+      "use_linear_reduction": 0,
+      "actual_epochs": 1
+    },
+    "best_score": 0.5812114161249528,
+    "metric": "nDCG@5",
+    "timestamp": "2026-01-11T00:24:57.434868"
+  },
+  "sam": {
+    "best_parameters": {
+      "hidden_size": 64,
+      "num_layers": 2,
+      "learning_rate": 0.0001,
+      "num_iter": 3,
+      "labmda": 20,
+      "max_length": 100,
+      "dropout_p": 0.1,
+      "use_embedding": 1,
+      "use_linear_reduction": 0,
+      "actual_epochs": 3
+    },
+    "best_score": 0.33798008964763115,
+    "metric": "nDCG@5",
+    "timestamp": "2026-01-11T04:33:08.457225"
+  },
+  "taobao": {
+    "best_parameters": {
+      "hidden_size": 64,
+      "num_layers": 2,
+      "learning_rate": 0.0001,
+      "num_iter": 3,
+      "labmda": 20,
+      "max_length": 100,
+      "dropout_p": 0.1,
+      "use_embedding": 1,
+      "use_linear_reduction": 0,
+      "actual_epochs": 1
+    },
+    "best_score": 0.08614062607871363,
+    "metric": "nDCG@5",
+    "timestamp": "2026-01-11T04:55:34.790207"
+  },
+  "valuedshopper": {
+    "best_parameters": {
+      "hidden_size": 32,
+      "num_layers": 3,
+      "learning_rate": 0.001,
+      "num_iter": 3,
+      "labmda": 10,
+      "max_length": 50,
+      "dropout_p": 0.1,
+      "use_embedding": 1,
+      "use_linear_reduction": 0,
+      "actual_epochs": 2
+    },
+    "best_score": 0.27118739680995246,
+    "metric": "nDCG@5",
+    "timestamp": "2026-01-13T14:48:32.406283"
+  }
+}

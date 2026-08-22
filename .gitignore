@@ -1,0 +1,19 @@
+# Large raw data and trained model artifacts
+datasets/raw/
+datasets/*/full.csv
+models/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env*
+
+# Logs
+**/logs/
+*.log
+
+# IDE
+.vscode/

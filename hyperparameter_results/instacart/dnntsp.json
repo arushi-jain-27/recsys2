@@ -1,0 +1,279 @@
+{
+  "dataset": "instacart",
+  "best_metric": "nDCG@5",
+  "best_score": 0.3768093691275056,
+  "best_parameters": {
+    "item_embed_dim": 16,
+    "batch_size": 32,
+    "learning_rate": 0.01,
+    "epochs": 10,
+    "loss_function": "mse_loss",
+    "optim": "Adam",
+    "weight_decay": 0,
+    "actual_epochs": 10
+  },
+  "all_results": [
+    {
+      "combination_id": 2,
+      "parameters": {
+        "item_embed_dim": 16,
+        "batch_size": 32,
+        "learning_rate": 0.01,
+        "epochs": 10,
+        "loss_function": "mse_loss",
+        "optim": "Adam",
+        "weight_decay": 0,
+        "actual_epochs": 10
+      },
+      "metrics": {
+        "HR@5": 0.3776262626262626,
+        "HR@10": 0.3765853775853776,
+        "WHR@5": 0.3805223665223665,
+        "WHR@10": 0.3398421098365277,
+        "nDCG@5": 0.3768093691275056,
+        "nDCG@10": 0.3413732459225814,
+        "recall@5": 0.2191632504166998,
+        "recall@10": 0.3165003253312218,
+        "precision@5": 0.3324848484848485,
+        "precision@10": 0.2582424242424243
+      },
+      "score": 0.3768093691275056
+    },
+    {
+      "combination_id": 9,
+      "parameters": {
+        "item_embed_dim": 64,
+        "batch_size": 32,
+        "learning_rate": 0.001,
+        "epochs": 10,
+        "loss_function": "mse_loss",
+        "optim": "Adam",
+        "weight_decay": 0,
+        "actual_epochs": 10
+      },
+      "metrics": {
+        "HR@5": 0.3730707070707071,
+        "HR@10": 0.36553030303030304,
+        "WHR@5": 0.3766296296296296,
+        "WHR@10": 0.3305841762661352,
+        "nDCG@5": 0.3714106758959444,
+        "nDCG@10": 0.3329947818232493,
+        "recall@5": 0.21522796679959735,
+        "recall@10": 0.30655134709653525,
+        "precision@5": 0.3286060606060606,
+        "precision@10": 0.2525454545454546
+      },
+      "score": 0.3714106758959444
+    },
+    {
+      "combination_id": 8,
+      "parameters": {
+        "item_embed_dim": 32,
+        "batch_size": 64,
+        "learning_rate": 0.01,
+        "epochs": 10,
+        "loss_function": "weight_mse_loss",
+        "optim": "Adam",
+        "weight_decay": 1e-05,
+        "actual_epochs": 5
+      },
+      "metrics": {
+        "HR@5": 0.34424242424242424,
+        "HR@10": 0.33441221741221744,
+        "WHR@5": 0.3532255892255892,
+        "WHR@10": 0.30965299786552786,
+        "nDCG@5": 0.34981801603712775,
+        "nDCG@10": 0.31297806021222846,
+        "recall@5": 0.1940647227113312,
+        "recall@10": 0.276456300402297,
+        "precision@5": 0.3060606060606061,
+        "precision@10": 0.23593939393939395
+      },
+      "score": 0.34981801603712775
+    },
+    {
+      "combination_id": 4,
+      "parameters": {
+        "item_embed_dim": 64,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "epochs": 10,
+        "loss_function": "bpr_loss",
+        "optim": "Adam",
+        "weight_decay": 0,
+        "actual_epochs": 9
+      },
+      "metrics": {
+        "HR@5": 0.33202020202020205,
+        "HR@10": 0.3350156325156325,
+        "WHR@5": 0.3377056277056277,
+        "WHR@10": 0.2982826436595217,
+        "nDCG@5": 0.33266090260243136,
+        "nDCG@10": 0.29986096459513206,
+        "recall@5": 0.1862929530876711,
+        "recall@10": 0.2774990313884145,
+        "precision@5": 0.2946666666666667,
+        "precision@10": 0.23272727272727273
+      },
+      "score": 0.33266090260243136
+    },
+    {
+      "combination_id": 3,
+      "parameters": {
+        "item_embed_dim": 32,
+        "batch_size": 32,
+        "learning_rate": 0.0005,
+        "epochs": 10,
+        "loss_function": "mse_loss",
+        "optim": "Adam",
+        "weight_decay": 0,
+        "actual_epochs": 10
+      },
+      "metrics": {
+        "HR@5": 0.3034747474747475,
+        "HR@10": 0.33015319865319864,
+        "WHR@5": 0.24135786435786438,
+        "WHR@10": 0.24685312112623709,
+        "nDCG@5": 0.228407392210678,
+        "nDCG@10": 0.221690544480659,
+        "recall@5": 0.17562422996323218,
+        "recall@10": 0.27709241894176045,
+        "precision@5": 0.2667878787878788,
+        "precision@10": 0.22606060606060607
+      },
+      "score": 0.228407392210678
+    },
+    {
+      "combination_id": 1,
+      "parameters": {
+        "item_embed_dim": 32,
+        "batch_size": 64,
+        "learning_rate": 0.01,
+        "epochs": 10,
+        "loss_function": "multi_label_soft_loss",
+        "optim": "Adam",
+        "weight_decay": 0.0001,
+        "actual_epochs": 7
+      },
+      "metrics": {
+        "HR@5": 0.09135353535353534,
+        "HR@10": 0.0814987974987975,
+        "WHR@5": 0.10053872053872052,
+        "WHR@10": 0.08125316421439752,
+        "nDCG@5": 0.10294003637812972,
+        "nDCG@10": 0.08641799520142004,
+        "recall@5": 0.045667624019809026,
+        "recall@10": 0.06461027928417293,
+        "precision@5": 0.08412121212121211,
+        "precision@10": 0.062060606060606066
+      },
+      "score": 0.10294003637812972
+    },
+    {
+      "combination_id": 0,
+      "parameters": {
+        "item_embed_dim": 32,
+        "batch_size": 128,
+        "learning_rate": 0.005,
+        "epochs": 10,
+        "loss_function": "weight_mse_loss",
+        "optim": "Adam",
+        "weight_decay": 1e-05,
+        "actual_epochs": 9
+      },
+      "metrics": {
+        "HR@5": 0.07067676767676767,
+        "HR@10": 0.06224410774410775,
+        "WHR@5": 0.0852135642135642,
+        "WHR@10": 0.06274221106735547,
+        "nDCG@5": 0.08527385005680985,
+        "nDCG@10": 0.07020130154079483,
+        "recall@5": 0.04407581718243393,
+        "recall@10": 0.05409846204061274,
+        "precision@5": 0.05915151515151515,
+        "precision@10": 0.0383030303030303
+      },
+      "score": 0.08527385005680985
+    },
+    {
+      "combination_id": 7,
+      "parameters": {
+        "item_embed_dim": 16,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "epochs": 10,
+        "loss_function": "multi_label_soft_loss",
+        "optim": "Adam",
+        "weight_decay": 1e-05,
+        "actual_epochs": 10
+      },
+      "metrics": {
+        "HR@5": 0.01712121212121212,
+        "HR@10": 0.012924963924963924,
+        "WHR@5": 0.019287157287157283,
+        "WHR@10": 0.015110452073273564,
+        "nDCG@5": 0.019067959088571444,
+        "nDCG@10": 0.014952475553730176,
+        "recall@5": 0.004712840078096979,
+        "recall@10": 0.006996044591128322,
+        "precision@5": 0.01709090909090909,
+        "precision@10": 0.012303030303030303
+      },
+      "score": 0.019067959088571444
+    },
+    {
+      "combination_id": 6,
+      "parameters": {
+        "item_embed_dim": 16,
+        "batch_size": 64,
+        "learning_rate": 0.0001,
+        "epochs": 10,
+        "loss_function": "weight_mse_loss",
+        "optim": "Adam",
+        "weight_decay": 0,
+        "actual_epochs": 1
+      },
+      "metrics": {
+        "HR@5": 0.005090909090909091,
+        "HR@10": 0.004013468013468014,
+        "WHR@5": 0.005575757575757575,
+        "WHR@10": 0.00477808386899296,
+        "nDCG@5": 0.005316331601155967,
+        "nDCG@10": 0.004516026733669046,
+        "recall@5": 0.0014571263777985893,
+        "recall@10": 0.0021318802172505674,
+        "precision@5": 0.005090909090909091,
+        "precision@10": 0.00393939393939394
+      },
+      "score": 0.005316331601155967
+    },
+    {
+      "combination_id": 5,
+      "parameters": {
+        "item_embed_dim": 16,
+        "batch_size": 64,
+        "learning_rate": 0.0001,
+        "epochs": 10,
+        "loss_function": "weight_mse_loss",
+        "optim": "Adam",
+        "weight_decay": 0.0001,
+        "actual_epochs": 1
+      },
+      "metrics": {
+        "HR@5": 0.00036363636363636367,
+        "HR@10": 0.0004646464646464647,
+        "WHR@5": 0.0006060606060606061,
+        "WHR@10": 0.00042118151209060296,
+        "nDCG@5": 0.000616654918679302,
+        "nDCG@10": 0.0005362454565288489,
+        "recall@5": 0.00017327117327117325,
+        "recall@10": 0.00036436167921755503,
+        "precision@5": 0.00036363636363636367,
+        "precision@10": 0.0003636363636363636
+      },
+      "score": 0.000616654918679302
+    }
+  ],
+  "random_seed": 42,
+  "timestamp": "2025-12-30T10:26:54.048410"
+}

@@ -1,0 +1,74 @@
+{
+  "dunnhumby": {
+    "best_parameters": {
+      "num_nearest_neighbors": 200,
+      "within_decay_rate": 0.9,
+      "group_decay_rate": 0.6,
+      "alpha": 0.2,
+      "num_groups": 2
+    },
+    "best_score": 0.26837008224535924,
+    "metric": "nDCG@5",
+    "timestamp": "2025-12-30T12:43:24.462880"
+  },
+  "instacart": {
+    "best_parameters": {
+      "num_nearest_neighbors": 1000,
+      "within_decay_rate": 0.9,
+      "group_decay_rate": 0.9,
+      "alpha": 0.7,
+      "num_groups": 6
+    },
+    "best_score": 0.4202910224739504,
+    "metric": "nDCG@5",
+    "timestamp": "2025-12-30T13:30:02.833957"
+  },
+  "retailrocket": {
+    "best_parameters": {
+      "num_nearest_neighbors": 60,
+      "within_decay_rate": 0.7,
+      "group_decay_rate": 0.7,
+      "alpha": 0.8,
+      "num_groups": 6
+    },
+    "best_score": 0.5517477802020474,
+    "metric": "nDCG@5",
+    "timestamp": "2025-12-30T19:26:20.240589"
+  },
+  "taobao": {
+    "best_parameters": {
+      "num_nearest_neighbors": 1000,
+      "within_decay_rate": 0.9,
+      "group_decay_rate": 0.9,
+      "alpha": 0.4,
+      "num_groups": 10
+    },
+    "best_score": 0.07798132530611546,
+    "metric": "nDCG@5",
+    "timestamp": "2025-12-31T09:26:03.072944"
+  },
+  "sam": {
+    "best_parameters": {
+      "num_nearest_neighbors": 200,
+      "within_decay_rate": 0.9,
+      "group_decay_rate": 0.9,
+      "alpha": 0.2,
+      "num_groups": 6
+    },
+    "best_score": 0.3429349010658624,
+    "metric": "nDCG@5",
+    "timestamp": "2025-12-31T13:59:29.217208"
+  },
+  "valuedshopper": {
+    "best_parameters": {
+      "num_nearest_neighbors": 1600,
+      "within_decay_rate": 0.9,
+      "group_decay_rate": 0.9,
+      "alpha": 0.5,
+      "num_groups": 7
+    },
+    "best_score": 0.3449968397979898,
+    "metric": "nDCG@5",
+    "timestamp": "2026-01-13T09:46:42.537739"
+  }
+}
