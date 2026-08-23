@@ -28,3 +28,5 @@ hyperparameter_results/*/rfm.json
 
 # IDE
 .vscode/
+*.code-workspace
+
