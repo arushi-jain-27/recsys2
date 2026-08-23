@@ -15,5 +15,8 @@ venv/
 **/logs/
 *.log
 
+# SLURM job scripts and their .out/.err files
+jobs/
+
 # IDE
 .vscode/
