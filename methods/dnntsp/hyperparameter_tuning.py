@@ -64,10 +64,11 @@ class DNNTSPHyperparameterTuner:
         print(f"  - Test users: {len(self.keyset_test)}")
         
         # Initialize evaluator for validation set with correct paths
-        self.evaluator = RecommendationEvaluator(self.dataset_name, "dnntsp")
+        self.evaluator = RecommendationEvaluator(self.dataset_name, "dnntsp", split='val')
         # Update paths to be relative to dnntsp directory
         self.evaluator.predictions_path = f"../../predictions/{self.dataset_name}/dnntsp/keyset0.json"
         self.evaluator.dataset_path = f"../../datasets/{self.dataset_name}/future.json"
+        self.evaluator.keyset_path = f"../../datasets/{self.dataset_name}/keyset_0.json"
 
         
     def _get_parameter_ranges(self):

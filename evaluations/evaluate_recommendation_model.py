@@ -14,18 +14,22 @@ from operator import mul
 from datetime import datetime
 
 class RecommendationEvaluator:
-    def __init__(self, dataset_name, model_name, base_path=None):
+    def __init__(self, dataset_name, model_name, split, keyset_index=0):
         self.dataset_name = dataset_name
         self.model_name = model_name
-            
+        # Prediction files hold both validation and test users; 'split' selects
+        # which of them the reported metrics are computed over.
+        self.split = split
+
         # Construct paths
         self.dataset_path = f"../datasets/{dataset_name}/future.json"
         self.predictions_path = f"../predictions/{dataset_name}/{model_name}/keyset0.json"
+        self.keyset_path = f"../datasets/{dataset_name}/keyset_{keyset_index}.json"
     
         
     
     def load_data(self):
-        """Load predictions and ground truth data"""
+        """Load predictions and ground truth data, keeping only the selected split"""
         print(f"{datetime.now()}: Loading predictions from {self.predictions_path}")
         with open(self.predictions_path, 'r') as f:
             self.predictions = json.load(f)
@@ -33,6 +37,16 @@ class RecommendationEvaluator:
         print(f"{datetime.now()}: Loading ground truth from {self.dataset_path}")
         with open(self.dataset_path, 'r') as f:
             self.ground_truth = json.load(f)
+
+        print(f"{datetime.now()}: Loading {self.split} keyset from {self.keyset_path}")
+        with open(self.keyset_path, 'r') as f:
+            keyset = json.load(f)
+        split_users = set(str(user) for user in keyset[self.split])
+        self.predictions = {
+            user: preds for user, preds in self.predictions.items() if user in split_users
+        }
+        print(f"{datetime.now()}: Evaluating {len(self.predictions)} of "
+              f"{len(split_users)} {self.split} users")
             
     
     def match_k(self, purchases, predictions, k=5):
@@ -242,13 +256,15 @@ def main():
     parser.add_argument('dataset_name', help='Name of the dataset (e.g., dunnhumby, instacart)')
     parser.add_argument('model_name', help='Name of the model (e.g., tifuknn, gru4rec)')
     parser.add_argument('--keyset', type=int, help='Specific keyset index to evaluate (default: evaluate all)')
+    parser.add_argument('--split', default='test', choices=['val', 'test'],
+                        help='Keyset split to report metrics on (default: test)')
 
     
     args = parser.parse_args()
     
     if args.keyset is not None:
         # Evaluate specific keyset
-        evaluator = RecommendationEvaluator(args.dataset_name, args.model_name)
+        evaluator = RecommendationEvaluator(args.dataset_name, args.model_name, args.split, args.keyset)
         evaluator.predictions_path = f"../predictions/{args.dataset_name}/{args.model_name}/keyset{args.keyset}.json"
         
         evaluator.load_data()
@@ -276,7 +292,7 @@ def main():
             print(f"\n{datetime.now()}: Evaluating {filename}...")
             
             # Create evaluator and update path
-            evaluator = RecommendationEvaluator(args.dataset_name, args.model_name)
+            evaluator = RecommendationEvaluator(args.dataset_name, args.model_name, args.split, keyset_index)
             evaluator.predictions_path = keyset_file
             
             evaluator.load_data()

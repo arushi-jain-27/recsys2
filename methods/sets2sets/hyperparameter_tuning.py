@@ -83,10 +83,11 @@ class Sets2SetsHyperparameterTuner:
                 self.weights[idx] = 0
         
         # Initialize evaluator for validation set with correct paths
-        self.evaluator = RecommendationEvaluator(self.dataset_name, "sets2sets")
+        self.evaluator = RecommendationEvaluator(self.dataset_name, "sets2sets", split='val')
         # Update paths to be relative to sets2sets directory
         self.evaluator.predictions_path = f"../../predictions/{self.dataset_name}/sets2sets/keyset0.json"
         self.evaluator.dataset_path = f"../../datasets/{self.dataset_name}/future.json"
+        self.evaluator.keyset_path = f"../../datasets/{self.dataset_name}/keyset_0.json"
 
         
     def _get_parameter_ranges(self):

@@ -232,11 +232,11 @@ class Recommender(object):
         
 
 
-    def export_predictions_frequency_style(self, dataset_name, fold_id=0, top_k=10):
+    def export_predictions_frequency_style(self, dataset_name, users, fold_id=0, top_k=10):
         """
         Export predictions exactly like baselines/frequency.py:
         a single JSON mapping user_id (string) -> top-k item ids (list[int])
-        for both validation and test users, saved under
+        for the given users, saved under
         ../../predictions/{dataset_name}/triple2vec/keyset{fold_id}.json
         relative to the methods/ directory.
         """
@@ -249,16 +249,7 @@ class Recommender(object):
 
         pred_dict = {}
 
-        # Validation users
-        users_val = set([u for (u, _) in self.dataValidation])
-        for u in users_val:
-            s = self.predict(u, None)
-            top_idx = np.argsort(-s)[:top_k]
-            pred_dict[str(int(u))] = [int(i) for i in top_idx.tolist()]
-
-        # Test users
-        users_test = set([u for (u, _) in self.dataTest])
-        for u in users_test:
+        for u in set(int(u) for u in users):
             s = self.predict(u, None)
             top_idx = np.argsort(-s)[:top_k]
             pred_dict[str(int(u))] = [int(i) for i in top_idx.tolist()]

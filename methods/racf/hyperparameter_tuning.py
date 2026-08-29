@@ -61,9 +61,10 @@ class RACFHyperparameterTuner:
         self.keyset_val = self.keyset['val']
 
         # Evaluator setup
-        self.evaluator = RecommendationEvaluator(self.dataset_name, "racf")
+        self.evaluator = RecommendationEvaluator(self.dataset_name, "racf", split='val')
         self.evaluator.predictions_path = f"../../predictions/{self.dataset_name}/racf/keyset0.json"
         self.evaluator.dataset_path = f"../../datasets/{self.dataset_name}/future.json"
+        self.evaluator.keyset_path = f"../../datasets/{self.dataset_name}/keyset_0.json"
 
         print(f"{datetime.now()}: Dataset loaded successfully")
         print(f"  - Users: {self.user_count}")

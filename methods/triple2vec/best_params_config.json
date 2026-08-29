@@ -2,59 +2,59 @@
   "dunnhumby": {
     "best_parameters": {
       "dim": 128,
-      "lr": 0.001,
+      "lr": 0.0005,
       "batch_size": 4096,
-      "n_neg": 50,
+      "n_neg": 25,
       "optimizer": "adam",
       "max_epoch": 200,
-      "n_sample": 5000000,
+      "n_sample": 1000000,
       "n_sample_per_epoch": 1000000,
       "patience": 5,
-      "l0": 0.3,
-      "ensemble": false,
+      "l0": 0.5,
+      "ensemble": true,
       "top_k": 10
     },
-    "best_score": 0.25760721474541226,
+    "best_score": 0.2619728214068232,
     "metric": "nDCG@5",
-    "timestamp": "2025-12-28T22:47:28.899748"
+    "timestamp": "2026-08-25T04:01:16.766558"
   },
   "instacart": {
     "best_parameters": {
       "dim": 64,
-      "lr": 0.0001,
-      "batch_size": 1024,
-      "n_neg": 10,
+      "lr": 0.001,
+      "batch_size": 4096,
+      "n_neg": 25,
       "optimizer": "adam",
       "max_epoch": 200,
-      "n_sample": 1000000,
+      "n_sample": 10000000,
       "n_sample_per_epoch": 1000000,
       "patience": 5,
-      "l0": 0.3,
+      "l0": 0.7,
       "ensemble": true,
       "top_k": 10
     },
-    "best_score": 0.43125432210997033,
+    "best_score": 0.4219545227387979,
     "metric": "nDCG@5",
-    "timestamp": "2025-12-29T02:58:05.462735"
+    "timestamp": "2026-08-25T14:26:36.368225"
   },
   "retailrocket": {
     "best_parameters": {
       "dim": 128,
-      "lr": 0.0005,
-      "batch_size": 2048,
-      "n_neg": 50,
+      "lr": 0.0001,
+      "batch_size": 1024,
+      "n_neg": 5,
       "optimizer": "adam",
       "max_epoch": 200,
-      "n_sample": 1000000,
+      "n_sample": 10000000,
       "n_sample_per_epoch": 1000000,
       "patience": 5,
       "l0": 0.3,
       "ensemble": false,
       "top_k": 10
     },
-    "best_score": 0.5783071885484159,
+    "best_score": 0.5654304518060728,
     "metric": "nDCG@5",
-    "timestamp": "2025-12-31T13:48:38.091365"
+    "timestamp": "2026-08-25T11:55:13.496677"
   },
   "sam": {
     "best_parameters": {
@@ -71,9 +71,9 @@
       "ensemble": true,
       "top_k": 10
     },
-    "best_score": 0.33779130996634726,
+    "best_score": 0.3454539275800753,
     "metric": "nDCG@5",
-    "timestamp": "2026-01-02T09:24:59.062095"
+    "timestamp": "2026-08-26T15:39:41.635497"
   },
   "valuedshopper": {
     "best_parameters": {
@@ -90,27 +90,27 @@
       "ensemble": true,
       "top_k": 10
     },
-    "best_score": 0.3448972159306607,
+    "best_score": 0.3376175108022851,
     "metric": "nDCG@5",
-    "timestamp": "2026-01-14T04:06:45.428270"
+    "timestamp": "2026-08-27T00:57:45.897099"
   },
   "taobao": {
     "best_parameters": {
-      "dim": 64,
-      "lr": 0.0001,
-      "batch_size": 1024,
-      "n_neg": 10,
+      "dim": 256,
+      "lr": 0.001,
+      "batch_size": 2048,
+      "n_neg": 25,
       "optimizer": "adam",
       "max_epoch": 200,
-      "n_sample": 1000000,
+      "n_sample": 5000000,
       "n_sample_per_epoch": 1000000,
       "patience": 5,
-      "l0": 0.3,
+      "l0": 1.0,
       "ensemble": true,
       "top_k": 10
     },
-    "best_score": 0.06517846698061439,
+    "best_score": 0.06250180432219393,
     "metric": "nDCG@5",
-    "timestamp": "2026-01-02T19:04:42.480806"
+    "timestamp": "2026-08-26T16:10:24.939986"
   }
 }

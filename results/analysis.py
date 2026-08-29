@@ -6,9 +6,6 @@ import sys
 
 METRICS = ["HR@5", "nDCG@5", "HR@10", "nDCG@10"]
 
-# Kept locally but left out of the reported comparison
-EXCLUDED_METHODS = {"rfm", "rfm_new"}
-
 
 def make_methods_metrics_table(dataset_name):
     dataset_dir = os.path.join(".", dataset_name)
@@ -21,9 +18,6 @@ def make_methods_metrics_table(dataset_name):
             continue
 
         method_name = filename[: -len("_summary_metrics.csv")]
-        if method_name in EXCLUDED_METHODS:
-            continue
-
         file_path = os.path.join(dataset_dir, filename)
 
         df = pd.read_csv(file_path)

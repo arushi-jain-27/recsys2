@@ -154,7 +154,7 @@ def train_model(model: nn.Module,
         val_ndcg = 0.0
         if val_predictions:
             # Create temporary evaluator
-            temp_evaluator = RecommendationEvaluator("temp", "temp")
+            temp_evaluator = RecommendationEvaluator("temp", "temp", split='val')
             temp_evaluator.predictions = val_predictions
             temp_evaluator.ground_truth = {k: data_future[k] for k in val_key_set if k in data_future}
             

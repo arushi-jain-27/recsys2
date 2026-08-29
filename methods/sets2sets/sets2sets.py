@@ -372,7 +372,7 @@ def train_model(data_history, data_future, output_size, encoder, decoder, model_
             if val_predictions:
                 
                 # Create temporary evaluator
-                temp_evaluator = RecommendationEvaluator("temp", "temp")
+                temp_evaluator = RecommendationEvaluator("temp", "temp", split='val')
                 temp_evaluator.predictions = val_predictions
                 temp_evaluator.ground_truth = {k: data_future[k] for k in val_keyset if k in data_future}
                 

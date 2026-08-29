@@ -18,14 +18,6 @@ venv/
 # SLURM job scripts and their .out/.err files
 jobs/
 
-# RFM variants: kept locally, excluded from the published repo
-methods/rfm_tuned/
-methods/baselines/rfm.py
-predictions/*/rfm/
-predictions/*/rfm_new/
-results/*/rfm_*.csv
-hyperparameter_results/*/rfm.json
-
 # IDE
 .vscode/
 *.code-workspace

@@ -86,19 +86,22 @@ def run_embedding(DATA_NAME, dim, lr, batch_size, n_neg, fold_id=0,
     return embeddingDict
 
 
-def run_recommendation(data_name, dim=None, lr=None, batch_size=None, n_neg=None, l0=None, fold_id=0, top_k=10, ensemble=False):
+def run_recommendation(data_name, dim=None, lr=None, batch_size=None, n_neg=None, l0=None, fold_id=0, top_k=10, ensemble=False,
+                       export_flags=('validation', 'test'), run_ranking_eval=True):
 
     myTrans, n_item, n_user = load_data(data_name, fold_id)
     dataTrain = myTrans[['UID', 'PID']].loc[myTrans['flag'] == 'train'].values
     dataValidation = myTrans[['UID', 'PID']].loc[myTrans['flag'] == 'validation'].values
     dataTest = myTrans[['UID', 'PID']].loc[myTrans['flag'] == 'test'].values
+    export_users = myTrans['UID'].loc[myTrans['flag'].isin(export_flags)].unique()
     params = [data_name, 'triple2vec', dim, lr, batch_size, n_neg, fold_id]
     model_name = "_".join([str(p) for p in params])
     myRec = triple2vecRec(data_name, model_name, l0=l0, ensemble=ensemble, fold_id=fold_id)
     myRec.assign_data(dataTrain, dataValidation, dataTest, n_user, n_item)
     myRec.assign_embeddings()
-    myRec.export_predictions_frequency_style(data_name, fold_id, top_k=top_k)
-    resVali, resTest = myRec.evaluate(dump=False)
+    myRec.export_predictions_frequency_style(data_name, export_users, fold_id, top_k=top_k)
+    if run_ranking_eval:
+        resVali, resTest = myRec.evaluate(dump=False)
     
 
 def main(argv):

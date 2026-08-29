@@ -38,11 +38,12 @@ class Triple2VecHyperparameterTuner:
         self.param_ranges = self._get_parameter_ranges()
 
         # Evaluator pointing to triple2vec prediction outputs
-        self.evaluator = RecommendationEvaluator(self.dataset_name, "triple2vec")
+        self.evaluator = RecommendationEvaluator(self.dataset_name, "triple2vec", split='val')
         self.evaluator.predictions_path = (
             f"../../predictions/{self.dataset_name}/triple2vec/keyset{self.fold_id}.json"
         )
         self.evaluator.dataset_path = f"../../datasets/{self.dataset_name}/future.json"
+        self.evaluator.keyset_path = f"../../datasets/{self.dataset_name}/keyset_{self.fold_id}.json"
 
     def _load_data(self):
         """Lightweight dataset load to extract key meta info and validate paths."""
@@ -84,7 +85,7 @@ class Triple2VecHyperparameterTuner:
         }
 
     def _evaluate_current_predictions(self):
-        """Evaluate predictions currently written by triple2vec under the configured keyset."""
+        """Evaluate the validation-only predictions written by triple2vec for this keyset."""
         self.evaluator.load_data()
         eval_df, avg_metrics = self.evaluator.evaluate()
         return eval_df, avg_metrics
@@ -122,6 +123,8 @@ class Triple2VecHyperparameterTuner:
             fold_id=self.fold_id,
             top_k=params['top_k'],
             ensemble=params['ensemble'],
+            export_flags=('validation',),
+            run_ranking_eval=False,
         )
 
         # Evaluate predictions
