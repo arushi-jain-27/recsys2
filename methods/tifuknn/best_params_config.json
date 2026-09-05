@@ -67,8 +67,32 @@
       "alpha": 0.5,
       "num_groups": 7
     },
-    "best_score": 0.3449968397979898,
+    "best_score": 0.355320387388252,
     "metric": "nDCG@5",
-    "timestamp": "2026-01-13T09:46:42.537739"
+    "timestamp": "2026-08-30T23:23:51.895683"
+  },
+  "tmall": {
+    "best_parameters": {
+      "num_nearest_neighbors": 1600,
+      "within_decay_rate": 0.9,
+      "group_decay_rate": 0.8,
+      "alpha": 0.8,
+      "num_groups": 3
+    },
+    "best_score": 0.009193866063331481,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-02T16:19:14.660649"
+  },
+  "tafeng": {
+    "best_parameters": {
+      "num_nearest_neighbors": 1000,
+      "within_decay_rate": 0.9,
+      "group_decay_rate": 0.9,
+      "alpha": 0.7,
+      "num_groups": 6
+    },
+    "best_score": 0.08704813062883922,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-02T23:20:52.211015"
   }
 }

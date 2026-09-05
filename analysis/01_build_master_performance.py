@@ -12,6 +12,8 @@ DATASETS = [
     "sam",
     "taobao",
     "valuedshopper",
+    "tmall",
+    "tafeng"
 ]
 
 METHODS = [

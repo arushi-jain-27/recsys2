@@ -1,18 +1,18 @@
 {
   "dunnhumby": {
     "best_parameters": {
-      "item_embed_dim": 16,
-      "batch_size": 32,
-      "learning_rate": 0.005,
+      "item_embed_dim": 32,
+      "batch_size": 64,
+      "learning_rate": 0.01,
       "epochs": 10,
       "loss_function": "weight_mse_loss",
       "optim": "Adam",
-      "weight_decay": 0,
+      "weight_decay": 1e-05,
       "actual_epochs": 10
     },
-    "best_score": 0.25245834816218105,
+    "best_score": 0.24848184132197595,
     "metric": "nDCG@5",
-    "timestamp": "2025-12-29T10:32:26.512806"
+    "timestamp": "2026-08-31T22:38:00.093224"
   },
   "instacart": {
     "best_parameters": {
@@ -27,7 +27,7 @@
     },
     "best_score": 0.3768093691275056,
     "metric": "nDCG@5",
-    "timestamp": "2025-12-30T10:26:54.069365"
+    "timestamp": "2026-09-01T12:00:13.671470"
   },
   "retailrocket": {
     "best_parameters": {
@@ -72,21 +72,51 @@
     },
     "best_score": 0.24750605809193302,
     "metric": "nDCG@5",
-    "timestamp": "2025-12-31T16:23:45.922237"
+    "timestamp": "2026-08-31T21:06:56.771377"
   },
   "valuedshopper": {
     "best_parameters": {
       "item_embed_dim": 16,
       "batch_size": 32,
       "learning_rate": 0.01,
-      "epochs": 3,
+      "epochs": 10,
       "loss_function": "mse_loss",
       "optim": "Adam",
       "weight_decay": 0,
-      "actual_epochs": 3
+      "actual_epochs": 7
     },
-    "best_score": 0.26791443646893404,
+    "best_score": 0.3420178812746662,
     "metric": "nDCG@5",
-    "timestamp": "2026-01-13T20:41:26.719179"
+    "timestamp": "2026-09-01T08:45:48.642937"
+  },
+  "tmall": {
+    "best_parameters": {
+      "item_embed_dim": 128,
+      "batch_size": 64,
+      "learning_rate": 0.005,
+      "epochs": 10,
+      "loss_function": "multi_label_soft_loss",
+      "optim": "Adam",
+      "weight_decay": 0,
+      "actual_epochs": 7
+    },
+    "best_score": 0.008814332062617178,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-03T16:14:30.546360"
+  },
+  "tafeng": {
+    "best_parameters": {
+      "item_embed_dim": 32,
+      "batch_size": 64,
+      "learning_rate": 0.01,
+      "epochs": 10,
+      "loss_function": "weight_mse_loss",
+      "optim": "Adam",
+      "weight_decay": 1e-05,
+      "actual_epochs": 8
+    },
+    "best_score": 0.09646231527121091,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-03T07:52:01.589269"
   }
 }

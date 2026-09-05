@@ -383,8 +383,8 @@ def main():
     parser.add_argument('--metric', '-m', default='nDCG@5', 
                        choices=['HR@5', 'WHR@5', 'nDCG@5', 'recall@5'],
                        help='Metric to optimize (default: nDCG@5)')
-    parser.add_argument('--max_combinations', '-max', type=int, default=10,
-                       help='Maximum number of parameter combinations to test (default: 10)')
+    parser.add_argument('--max_combinations', '-max', type=int, default=20,
+                       help='Maximum number of parameter combinations to test (default: 20)')
     parser.add_argument('--top_n', '-n', type=int, default=3,
                        help='Number of top results to display (default: 3)')
     parser.add_argument('--seed', '-s', type=int, default=42,

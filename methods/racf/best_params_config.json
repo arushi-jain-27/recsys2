@@ -55,8 +55,28 @@
       "asymmetry": 0.1,
       "locality": 10
     },
-    "best_score": 0.3326943790747571,
+    "best_score": 0.3451497674843603,
     "metric": "nDCG@5",
-    "timestamp": "2026-01-13T10:38:57.916590"
+    "timestamp": "2026-08-31T00:41:51.870595"
+  },
+  "tmall": {
+    "best_parameters": {
+      "recency": 50,
+      "asymmetry": 0,
+      "locality": 10
+    },
+    "best_score": 0.008745105193837078,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-02T17:15:03.822552"
+  },
+  "tafeng": {
+    "best_parameters": {
+      "recency": 30,
+      "asymmetry": 0.25,
+      "locality": 1
+    },
+    "best_score": 0.09748068124612935,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-02T23:34:11.889889"
   }
 }

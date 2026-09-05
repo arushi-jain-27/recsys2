@@ -77,7 +77,7 @@ class DNNTSPHyperparameterTuner:
             'item_embed_dim': [16, 32, 64, 128],
             'batch_size': [32, 64, 128],
             'learning_rate': [0.0001, 0.0005, 0.001, 0.005, 0.01],
-            'epochs': [3],  # Use early stopping
+            'epochs': [10],  # patience-5 early stopping still applies inside train_model
             'loss_function': ['multi_label_soft_loss', 'weight_mse_loss', 'mse_loss', 'bpr_loss'],
             'optim': ['Adam'],
             'weight_decay': [0, 1e-5, 1e-4]
@@ -356,7 +356,7 @@ def main():
     parser.add_argument('--top_n', '-n', type=int, default=3,
                        help='Number of top results to display (default: 3)')
     parser.add_argument('--seed', '-s', type=int, default=42,
-                       help='Random seed for reproducibility (default: 42)')
+                        help='Random seed for reproducibility (default: 42)')
     
     args = parser.parse_args()
     

@@ -22,6 +22,8 @@ DATASETS = [
     "sam",
     "taobao",
     "valuedshopper",
+    "tmall",
+    "tafeng",
 ]
 
 TOP_NEIGHBORS = 20
