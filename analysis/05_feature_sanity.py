@@ -12,17 +12,12 @@ FEATURES = [
     "n_baskets",
     "avg_basket_size",
     "repeat_rate",
-    "item_entropy",
-    "singleton_item_share",
     "adjacent_basket_jaccard",
-    "recency_frequency_disagreement",
-    "preference_drift",
     "recent_basket_novelty",
     "popularity_profile",
-    "frequency_popularity_alignment",
     "neighbor_similarity",
-    "cooccurrence_support",
-    "transition_predictability",
+    "sequential_specificity",
+    "relational_strength",
 ]
 
 
