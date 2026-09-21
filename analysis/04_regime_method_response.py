@@ -5,7 +5,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "analysis" / "data"
 
-METHODS = ["recency", "frequency", "racf", "tifuknn", "fpmc", "triple2vec", "sets2sets", "dnntsp", "cbp", "diffrec"]
+METHODS = ["recency", "frequency", "tifuknn", "fpmc", "triple2vec", "dnntsp", "cbp", "diffrec"]
 FEATURES = [
     "n_baskets",
     "avg_basket_size",
