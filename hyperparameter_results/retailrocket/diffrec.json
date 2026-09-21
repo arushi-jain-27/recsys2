@@ -1,0 +1,560 @@
+{
+  "dataset": "retailrocket",
+  "best_metric": "nDCG@5",
+  "best_score": 0.561705605793947,
+  "best_parameters": {
+    "hidden": 1000,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 200,
+    "steps": 10,
+    "noise_scale": 0.0001,
+    "noise_min": 0.005,
+    "noise_max": 0.01,
+    "n_epoch": 20
+  },
+  "all_results": [
+    {
+      "combination_id": 4,
+      "parameters": {
+        "hidden": 1000,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 200,
+        "steps": 10,
+        "noise_scale": 0.0001,
+        "noise_min": 0.005,
+        "noise_max": 0.01,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.5681372549019608,
+        "HR@10": 0.5696078431372549,
+        "WHR@5": 0.5612278244631187,
+        "WHR@10": 0.5594349983168049,
+        "nDCG@5": 0.561705605793947,
+        "nDCG@10": 0.5623829875567516,
+        "recall@5": 0.5584733893557423,
+        "recall@10": 0.5610994397759104,
+        "precision@5": 0.14411764705882352,
+        "precision@10": 0.07941176470588235
+      },
+      "score": 0.561705605793947
+    },
+    {
+      "combination_id": 18,
+      "parameters": {
+        "hidden": 1000,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 400,
+        "steps": 40,
+        "noise_scale": 0.0001,
+        "noise_min": 0.0001,
+        "noise_max": 0.01,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.571078431372549,
+        "HR@10": 0.571078431372549,
+        "WHR@5": 0.5550887021475257,
+        "WHR@10": 0.5537318642627329,
+        "nDCG@5": 0.5550161995214736,
+        "nDCG@10": 0.5550161995214736,
+        "recall@5": 0.5589985994397759,
+        "recall@10": 0.561624649859944,
+        "precision@5": 0.14705882352941174,
+        "precision@10": 0.08088235294117646
+      },
+      "score": 0.5550161995214736
+    },
+    {
+      "combination_id": 16,
+      "parameters": {
+        "hidden": 1000,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 200,
+        "steps": 40,
+        "noise_scale": 0.01,
+        "noise_min": 0.005,
+        "noise_max": 0.01,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.40196078431372545,
+        "HR@10": 0.4313725490196078,
+        "WHR@5": 0.32312091503267976,
+        "WHR@10": 0.322010090585942,
+        "nDCG@5": 0.3247415576292385,
+        "nDCG@10": 0.3247415576292385,
+        "recall@5": 0.3898809523809524,
+        "recall@10": 0.4219187675070028,
+        "precision@5": 0.11176470588235296,
+        "precision@10": 0.06617647058823528
+      },
+      "score": 0.3247415576292385
+    },
+    {
+      "combination_id": 15,
+      "parameters": {
+        "hidden": 200,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 200,
+        "steps": 10,
+        "noise_scale": 0.0001,
+        "noise_min": 0.0001,
+        "noise_max": 0.005,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.40196078431372545,
+        "HR@10": 0.46078431372549017,
+        "WHR@5": 0.25396825396825395,
+        "WHR@10": 0.2538472045164815,
+        "nDCG@5": 0.25539477652977544,
+        "nDCG@10": 0.25539477652977544,
+        "recall@5": 0.3898809523809524,
+        "recall@10": 0.45133053221288516,
+        "precision@5": 0.1147058823529412,
+        "precision@10": 0.07058823529411765
+      },
+      "score": 0.25539477652977544
+    },
+    {
+      "combination_id": 0,
+      "parameters": {
+        "hidden": 200,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 400,
+        "steps": 5,
+        "noise_scale": 0.0001,
+        "noise_min": 0.005,
+        "noise_max": 0.01,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.29656862745098034,
+        "HR@10": 0.40441176470588236,
+        "WHR@5": 0.15306956115779644,
+        "WHR@10": 0.15319934303270674,
+        "nDCG@5": 0.1545693128054034,
+        "nDCG@10": 0.1545693128054034,
+        "recall@5": 0.28448879551820727,
+        "recall@10": 0.39495798319327724,
+        "precision@5": 0.08823529411764708,
+        "precision@10": 0.06323529411764704
+      },
+      "score": 0.1545693128054034
+    },
+    {
+      "combination_id": 2,
+      "parameters": {
+        "hidden": 1000,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 400,
+        "steps": 10,
+        "noise_scale": 0.01,
+        "noise_min": 0.0001,
+        "noise_max": 0.01,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.19362745098039214,
+        "HR@10": 0.23627450980392156,
+        "WHR@5": 0.13492063492063494,
+        "WHR@10": 0.1317505167623543,
+        "nDCG@5": 0.13759580323257237,
+        "nDCG@10": 0.13651692202522883,
+        "recall@5": 0.18154761904761904,
+        "recall@10": 0.22776610644257703,
+        "precision@5": 0.06764705882352942,
+        "precision@10": 0.04411764705882354
+      },
+      "score": 0.13759580323257237
+    },
+    {
+      "combination_id": 10,
+      "parameters": {
+        "hidden": 200,
+        "lr": 1e-05,
+        "weight_decay": 0.0,
+        "batch_size": 200,
+        "steps": 5,
+        "noise_scale": 0.005,
+        "noise_min": 0.0001,
+        "noise_max": 0.01,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.014705882352941176,
+        "HR@10": 0.014705882352941176,
+        "WHR@5": 0.014705882352941176,
+        "WHR@10": 0.014705882352941176,
+        "nDCG@5": 0.014705882352941176,
+        "nDCG@10": 0.014705882352941176,
+        "recall@5": 0.014705882352941176,
+        "recall@10": 0.014705882352941176,
+        "precision@5": 0.0029411764705882353,
+        "precision@10": 0.0014705882352941176
+      },
+      "score": 0.014705882352941176
+    },
+    {
+      "combination_id": 11,
+      "parameters": {
+        "hidden": 200,
+        "lr": 5e-05,
+        "weight_decay": 0.0,
+        "batch_size": 200,
+        "steps": 10,
+        "noise_scale": 0.01,
+        "noise_min": 0.001,
+        "noise_max": 0.005,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.014705882352941176,
+        "HR@10": 0.014705882352941176,
+        "WHR@5": 0.014705882352941176,
+        "WHR@10": 0.014705882352941176,
+        "nDCG@5": 0.014705882352941176,
+        "nDCG@10": 0.014705882352941176,
+        "recall@5": 0.014705882352941176,
+        "recall@10": 0.014705882352941176,
+        "precision@5": 0.0029411764705882353,
+        "precision@10": 0.0014705882352941176
+      },
+      "score": 0.014705882352941176
+    },
+    {
+      "combination_id": 17,
+      "parameters": {
+        "hidden": 200,
+        "lr": 5e-05,
+        "weight_decay": 0.0,
+        "batch_size": 200,
+        "steps": 5,
+        "noise_scale": 0.01,
+        "noise_min": 0.0001,
+        "noise_max": 0.01,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.014705882352941176,
+        "HR@10": 0.014705882352941176,
+        "WHR@5": 0.014705882352941176,
+        "WHR@10": 0.014705882352941176,
+        "nDCG@5": 0.014705882352941176,
+        "nDCG@10": 0.014705882352941176,
+        "recall@5": 0.014705882352941176,
+        "recall@10": 0.014705882352941176,
+        "precision@5": 0.0029411764705882353,
+        "precision@10": 0.0014705882352941176
+      },
+      "score": 0.014705882352941176
+    },
+    {
+      "combination_id": 19,
+      "parameters": {
+        "hidden": 200,
+        "lr": 1e-05,
+        "weight_decay": 0.0,
+        "batch_size": 400,
+        "steps": 5,
+        "noise_scale": 0.01,
+        "noise_min": 0.0001,
+        "noise_max": 0.005,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.014705882352941176,
+        "HR@10": 0.014705882352941176,
+        "WHR@5": 0.014705882352941176,
+        "WHR@10": 0.014705882352941176,
+        "nDCG@5": 0.014705882352941176,
+        "nDCG@10": 0.014705882352941176,
+        "recall@5": 0.014705882352941176,
+        "recall@10": 0.014705882352941176,
+        "precision@5": 0.0029411764705882353,
+        "precision@10": 0.0014705882352941176
+      },
+      "score": 0.014705882352941176
+    },
+    {
+      "combination_id": 1,
+      "parameters": {
+        "hidden": 200,
+        "lr": 1e-05,
+        "weight_decay": 0.0,
+        "batch_size": 400,
+        "steps": 10,
+        "noise_scale": 0.01,
+        "noise_min": 0.001,
+        "noise_max": 0.01,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.014705882352941176,
+        "HR@10": 0.014705882352941176,
+        "WHR@5": 0.0,
+        "WHR@10": 0.0,
+        "nDCG@5": 0.0,
+        "nDCG@10": 0.0,
+        "recall@5": 0.014705882352941176,
+        "recall@10": 0.014705882352941176,
+        "precision@5": 0.0029411764705882353,
+        "precision@10": 0.0014705882352941176
+      },
+      "score": 0.0
+    },
+    {
+      "combination_id": 3,
+      "parameters": {
+        "hidden": 200,
+        "lr": 1e-05,
+        "weight_decay": 0.0,
+        "batch_size": 400,
+        "steps": 40,
+        "noise_scale": 0.01,
+        "noise_min": 0.0001,
+        "noise_max": 0.01,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.014705882352941176,
+        "HR@10": 0.014705882352941176,
+        "WHR@5": 0.0,
+        "WHR@10": 0.0,
+        "nDCG@5": 0.0,
+        "nDCG@10": 0.0,
+        "recall@5": 0.014705882352941176,
+        "recall@10": 0.014705882352941176,
+        "precision@5": 0.0029411764705882353,
+        "precision@10": 0.0014705882352941176
+      },
+      "score": 0.0
+    },
+    {
+      "combination_id": 5,
+      "parameters": {
+        "hidden": 200,
+        "lr": 1e-05,
+        "weight_decay": 0.0,
+        "batch_size": 400,
+        "steps": 40,
+        "noise_scale": 0.0001,
+        "noise_min": 0.001,
+        "noise_max": 0.005,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.0,
+        "HR@10": 0.014705882352941176,
+        "WHR@5": 0.0,
+        "WHR@10": 0.0,
+        "nDCG@5": 0.0,
+        "nDCG@10": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.014705882352941176,
+        "precision@5": 0.0,
+        "precision@10": 0.0014705882352941176
+      },
+      "score": 0.0
+    },
+    {
+      "combination_id": 6,
+      "parameters": {
+        "hidden": 1000,
+        "lr": 1e-05,
+        "weight_decay": 0.0,
+        "batch_size": 200,
+        "steps": 10,
+        "noise_scale": 0.01,
+        "noise_min": 0.001,
+        "noise_max": 0.005,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.0,
+        "HR@10": 0.0,
+        "WHR@5": 0.0,
+        "WHR@10": 0.0,
+        "nDCG@5": 0.0,
+        "nDCG@10": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0
+      },
+      "score": 0.0
+    },
+    {
+      "combination_id": 7,
+      "parameters": {
+        "hidden": 1000,
+        "lr": 5e-05,
+        "weight_decay": 0.0,
+        "batch_size": 400,
+        "steps": 5,
+        "noise_scale": 0.01,
+        "noise_min": 0.001,
+        "noise_max": 0.01,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.0,
+        "HR@10": 0.0,
+        "WHR@5": 0.0,
+        "WHR@10": 0.0,
+        "nDCG@5": 0.0,
+        "nDCG@10": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0
+      },
+      "score": 0.0
+    },
+    {
+      "combination_id": 8,
+      "parameters": {
+        "hidden": 1000,
+        "lr": 1e-05,
+        "weight_decay": 0.0,
+        "batch_size": 400,
+        "steps": 10,
+        "noise_scale": 0.01,
+        "noise_min": 0.001,
+        "noise_max": 0.005,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.0,
+        "HR@10": 0.0,
+        "WHR@5": 0.0,
+        "WHR@10": 0.0,
+        "nDCG@5": 0.0,
+        "nDCG@10": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0
+      },
+      "score": 0.0
+    },
+    {
+      "combination_id": 9,
+      "parameters": {
+        "hidden": 1000,
+        "lr": 5e-05,
+        "weight_decay": 0.0,
+        "batch_size": 200,
+        "steps": 10,
+        "noise_scale": 0.005,
+        "noise_min": 0.001,
+        "noise_max": 0.01,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.0,
+        "HR@10": 0.0,
+        "WHR@5": 0.0,
+        "WHR@10": 0.0,
+        "nDCG@5": 0.0,
+        "nDCG@10": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0
+      },
+      "score": 0.0
+    },
+    {
+      "combination_id": 12,
+      "parameters": {
+        "hidden": 1000,
+        "lr": 5e-05,
+        "weight_decay": 0.0,
+        "batch_size": 400,
+        "steps": 5,
+        "noise_scale": 0.005,
+        "noise_min": 0.0001,
+        "noise_max": 0.005,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.0,
+        "HR@10": 0.0,
+        "WHR@5": 0.0,
+        "WHR@10": 0.0,
+        "nDCG@5": 0.0,
+        "nDCG@10": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0
+      },
+      "score": 0.0
+    },
+    {
+      "combination_id": 13,
+      "parameters": {
+        "hidden": 200,
+        "lr": 1e-05,
+        "weight_decay": 0.0,
+        "batch_size": 400,
+        "steps": 40,
+        "noise_scale": 0.0001,
+        "noise_min": 0.0001,
+        "noise_max": 0.005,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.0,
+        "HR@10": 0.014705882352941176,
+        "WHR@5": 0.0,
+        "WHR@10": 0.0,
+        "nDCG@5": 0.0,
+        "nDCG@10": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.014705882352941176,
+        "precision@5": 0.0,
+        "precision@10": 0.0014705882352941176
+      },
+      "score": 0.0
+    },
+    {
+      "combination_id": 14,
+      "parameters": {
+        "hidden": 1000,
+        "lr": 1e-05,
+        "weight_decay": 0.0,
+        "batch_size": 200,
+        "steps": 5,
+        "noise_scale": 0.0001,
+        "noise_min": 0.001,
+        "noise_max": 0.005,
+        "n_epoch": 20
+      },
+      "metrics": {
+        "HR@5": 0.0,
+        "HR@10": 0.0,
+        "WHR@5": 0.0,
+        "WHR@10": 0.0,
+        "nDCG@5": 0.0,
+        "nDCG@10": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0
+      },
+      "score": 0.0
+    }
+  ],
+  "random_seed": 42,
+  "timestamp": "2026-09-21T05:39:29.080244"
+}

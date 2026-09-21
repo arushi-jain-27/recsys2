@@ -13,9 +13,12 @@ METHODS = [
     "frequency",
     "racf",
     "tifuknn",
+    "fpmc",
     "triple2vec",
     "sets2sets",
     "dnntsp",
+    "cbp",
+    "diffrec",
 ]
 
 EPS = 1e-12

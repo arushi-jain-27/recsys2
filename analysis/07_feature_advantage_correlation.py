@@ -14,9 +14,12 @@ METHODS = [
     "frequency",
     "racf",
     "tifuknn",
+    "fpmc",
     "triple2vec",
     "sets2sets",
     "dnntsp",
+    "cbp",
+    "diffrec",
 ]
 
 FEATURES = [

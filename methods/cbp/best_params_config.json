@@ -1,0 +1,122 @@
+{
+  "retailrocket": {
+    "best_parameters": {
+      "dim": 32,
+      "lr": 0.01,
+      "l2": 0.0001,
+      "alpha": 0.9,
+      "beta": 0.4,
+      "decay": 0.4,
+      "batch_size": 100,
+      "n_epoch": 20
+    },
+    "best_score": 0.5783409745808932,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T18:28:47.303141"
+  },
+  "sam": {
+    "best_parameters": {
+      "dim": 64,
+      "lr": 0.01,
+      "l2": 1e-05,
+      "alpha": 0.2,
+      "beta": 0.8,
+      "decay": 0.8,
+      "batch_size": 200,
+      "n_epoch": 20
+    },
+    "best_score": 0.35126645253398736,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T19:34:28.918923"
+  },
+  "dunnhumby": {
+    "best_parameters": {
+      "dim": 32,
+      "lr": 0.001,
+      "l2": 0.0001,
+      "alpha": 0.1,
+      "beta": 0.4,
+      "decay": 0.4,
+      "batch_size": 200,
+      "n_epoch": 20
+    },
+    "best_score": 0.2759693264770021,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T20:02:04.420745"
+  },
+  "instacart": {
+    "best_parameters": {
+      "dim": 64,
+      "lr": 0.01,
+      "l2": 0.0001,
+      "alpha": 0.2,
+      "beta": 0.6,
+      "decay": 0.8,
+      "batch_size": 200,
+      "n_epoch": 20
+    },
+    "best_score": 0.4324887887731298,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T20:23:09.477853"
+  },
+  "tmall": {
+    "best_parameters": {
+      "dim": 64,
+      "lr": 0.001,
+      "l2": 1e-05,
+      "alpha": 0.9,
+      "beta": 0.2,
+      "decay": 0.4,
+      "batch_size": 50,
+      "n_epoch": 20
+    },
+    "best_score": 0.008059109882954886,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T20:30:20.188415"
+  },
+  "tafeng": {
+    "best_parameters": {
+      "dim": 64,
+      "lr": 0.01,
+      "l2": 1e-05,
+      "alpha": 0.2,
+      "beta": 0.8,
+      "decay": 0.8,
+      "batch_size": 200,
+      "n_epoch": 20
+    },
+    "best_score": 0.10147742225132864,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T20:36:17.135106"
+  },
+  "taobao": {
+    "best_parameters": {
+      "dim": 64,
+      "lr": 0.01,
+      "l2": 1e-05,
+      "alpha": 0.2,
+      "beta": 0.8,
+      "decay": 0.8,
+      "batch_size": 200,
+      "n_epoch": 20
+    },
+    "best_score": 0.07260750505946974,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T20:54:07.039583"
+  },
+  "valuedshopper": {
+    "best_parameters": {
+      "dim": 32,
+      "lr": 0.01,
+      "l2": 0.0001,
+      "alpha": 0.9,
+      "beta": 0.4,
+      "decay": 0.4,
+      "batch_size": 100,
+      "n_epoch": 20
+    },
+    "best_score": 0.34479970385225966,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T21:13:50.185673"
+  }
+}

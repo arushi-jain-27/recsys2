@@ -41,9 +41,12 @@ def make_methods_metrics_table(dataset_name):
         "frequency",
         "racf",
         "tifuknn",
+        "fpmc",
         "triple2vec",
         "sets2sets",
         "dnntsp",
+        "cbp",
+        "diffrec",
     ]
 
     present_in_order = [m for m in desired_order if m in table.index]

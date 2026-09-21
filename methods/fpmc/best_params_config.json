@@ -1,0 +1,98 @@
+{
+  "retailrocket": {
+    "best_parameters": {
+      "n_factor": 128,
+      "learn_rate": 0.01,
+      "regular": 0.01,
+      "n_neg": 5,
+      "n_epoch": 20
+    },
+    "best_score": 0.4919449779191906,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T18:02:06.314414"
+  },
+  "tafeng": {
+    "best_parameters": {
+      "n_factor": 128,
+      "learn_rate": 0.001,
+      "regular": 0.0,
+      "n_neg": 10,
+      "n_epoch": 20
+    },
+    "best_score": 0.07390761913466969,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T19:20:56.674354"
+  },
+  "sam": {
+    "best_parameters": {
+      "n_factor": 16,
+      "learn_rate": 0.05,
+      "regular": 0.01,
+      "n_neg": 5,
+      "n_epoch": 20
+    },
+    "best_score": 0.11500395532684524,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T20:28:58.996210"
+  },
+  "taobao": {
+    "best_parameters": {
+      "n_factor": 32,
+      "learn_rate": 0.005,
+      "regular": 0.001,
+      "n_neg": 5,
+      "n_epoch": 20
+    },
+    "best_score": 0.07535667070471694,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T20:30:27.811110"
+  },
+  "tmall": {
+    "best_parameters": {
+      "n_factor": 16,
+      "learn_rate": 0.05,
+      "regular": 0.01,
+      "n_neg": 5,
+      "n_epoch": 20
+    },
+    "best_score": 0.003244251453407384,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T21:17:12.653916"
+  },
+  "dunnhumby": {
+    "best_parameters": {
+      "n_factor": 64,
+      "learn_rate": 0.005,
+      "regular": 0.0001,
+      "n_neg": 10,
+      "n_epoch": 20
+    },
+    "best_score": 0.15167964448112292,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-19T21:21:02.543740"
+  },
+  "instacart": {
+    "best_parameters": {
+      "n_factor": 64,
+      "learn_rate": 0.005,
+      "regular": 0.0001,
+      "n_neg": 20,
+      "n_epoch": 20
+    },
+    "best_score": 0.1339006563386212,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-20T06:12:26.978675"
+  },
+  "valuedshopper": {
+    "best_parameters": {
+      "n_factor": 64,
+      "learn_rate": 0.005,
+      "regular": 0.0001,
+      "n_neg": 20,
+      "n_epoch": 20
+    },
+    "best_score": 0.2080398930404921,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-20T11:47:52.263629"
+  }
+}

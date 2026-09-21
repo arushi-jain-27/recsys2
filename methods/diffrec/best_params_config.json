@@ -1,0 +1,130 @@
+{
+  "retailrocket": {
+    "best_parameters": {
+      "hidden": 1000,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "batch_size": 200,
+      "steps": 10,
+      "noise_scale": 0.0001,
+      "noise_min": 0.005,
+      "noise_max": 0.01,
+      "n_epoch": 20
+    },
+    "best_score": 0.561705605793947,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-21T05:39:29.082305"
+  },
+  "sam": {
+    "best_parameters": {
+      "hidden": 1000,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "batch_size": 200,
+      "steps": 10,
+      "noise_scale": 0.0001,
+      "noise_min": 0.005,
+      "noise_max": 0.01,
+      "n_epoch": 20
+    },
+    "best_score": 0.16881293209921178,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-21T05:58:37.981270"
+  },
+  "instacart": {
+    "best_parameters": {
+      "hidden": 1000,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "batch_size": 400,
+      "steps": 40,
+      "noise_scale": 0.0001,
+      "noise_min": 0.0001,
+      "noise_max": 0.01,
+      "n_epoch": 20
+    },
+    "best_score": 0.3456046692655181,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-21T06:17:30.325041"
+  },
+  "dunnhumby": {
+    "best_parameters": {
+      "hidden": 1000,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "batch_size": 400,
+      "steps": 40,
+      "noise_scale": 0.0001,
+      "noise_min": 0.0001,
+      "noise_max": 0.01,
+      "n_epoch": 20
+    },
+    "best_score": 0.26237847758857374,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-21T06:22:50.165329"
+  },
+  "tafeng": {
+    "best_parameters": {
+      "hidden": 1000,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "batch_size": 400,
+      "steps": 40,
+      "noise_scale": 0.0001,
+      "noise_min": 0.0001,
+      "noise_max": 0.01,
+      "n_epoch": 20
+    },
+    "best_score": 0.08450067909019045,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-21T06:36:52.868514"
+  },
+  "valuedshopper": {
+    "best_parameters": {
+      "hidden": 1000,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "batch_size": 400,
+      "steps": 40,
+      "noise_scale": 0.0001,
+      "noise_min": 0.0001,
+      "noise_max": 0.01,
+      "n_epoch": 20
+    },
+    "best_score": 0.32319289178700894,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-21T06:45:36.356383"
+  },
+  "tmall": {
+    "best_parameters": {
+      "hidden": 1000,
+      "lr": 5e-05,
+      "weight_decay": 0.0,
+      "batch_size": 400,
+      "steps": 5,
+      "noise_scale": 0.005,
+      "noise_min": 0.0001,
+      "noise_max": 0.005,
+      "n_epoch": 20
+    },
+    "best_score": 0.0065864118087733715,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-21T07:00:58.867220"
+  },
+  "taobao": {
+    "best_parameters": {
+      "hidden": 1000,
+      "lr": 5e-05,
+      "weight_decay": 0.0,
+      "batch_size": 200,
+      "steps": 10,
+      "noise_scale": 0.005,
+      "noise_min": 0.001,
+      "noise_max": 0.01,
+      "n_epoch": 20
+    },
+    "best_score": 0.08597264299351458,
+    "metric": "nDCG@5",
+    "timestamp": "2026-09-21T07:21:11.772359"
+  }
+}
