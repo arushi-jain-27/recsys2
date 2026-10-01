@@ -62,18 +62,23 @@ class RecommendationEvaluator:
         if not values:
             return 0.0
         return sum(values) / len(values)
-    
+
     def calculate_ndcg(self, values, total_purchases):
         """Calculate normalized DCG"""
-        n = min(len(values), total_purchases)
-        dcg = sum([values[i] / np.log(i + 2) for i in range(n)])
-        idcg = sum([1 / np.log(i + 2) for i in range(n)])
-        if idcg == 0:
-            return 0
-        return dcg / idcg
-    
+        if not values or total_purchases <= 0:
+            return 0.0
 
-    
+        # DCG considers all retrieved positions up to k.
+        dcg = sum([values[i] / np.log(i + 2) for i in range(len(values))])
+
+        # IDCG has at most min(k, number of relevant items) relevant results.
+        n_relevant = min(len(values), total_purchases)
+        idcg = sum([1 / np.log(i + 2) for i in range(n_relevant)])
+
+        if idcg == 0:
+            return 0.0
+        return dcg / idcg
+
     def evaluate(self, ks=(5, 10)):
         """Main evaluation function for specified k values (defaults to 5 and 10)"""
         print(f"{datetime.now()}: Starting evaluation for {self.dataset_name}/{self.model_name}")
