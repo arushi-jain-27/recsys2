@@ -22,3 +22,7 @@ jobs/
 .vscode/
 *.code-workspace
 
+# Local RF baselines, not part of the tracked experiment
+methods/baselines/rf.py
+methods/baselines/rfw.py
+
